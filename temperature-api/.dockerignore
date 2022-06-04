@@ -1,0 +1,11 @@
+.git
+
+.idea
+
+target/
+
+.gitignore
+
+*.zip
+
+*.md

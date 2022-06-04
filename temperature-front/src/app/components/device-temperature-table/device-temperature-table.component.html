@@ -1,0 +1,16 @@
+<div class="table-responsive">
+    <table class="table text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Timestamp</th>
+                <th>Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let temp of temperatures">
+                <td>{{temp?.timestamp}}</td>
+                <td>{{temp?.temperature}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

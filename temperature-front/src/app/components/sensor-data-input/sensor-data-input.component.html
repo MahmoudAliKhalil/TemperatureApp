@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <div class="form-floating">
+      <input class="form-control" id="sensorData" type="text" [(ngModel)]="sensorData.data" (keyup.enter)="validate()" [class.is-valid]="isValid != undefined && isValid" [class.is-invalid]="isValid != undefined && !isValid"  placeholder="0x4822264014" required>
+      <label for="sensorData">Sensors Data</label>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+      <div class="invalid-feedback">
+        Please provide correct hexadecimal number.
+      </div>
+    </div>
+  </div>
+</div>

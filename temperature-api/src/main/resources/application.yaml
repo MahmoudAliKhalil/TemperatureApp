@@ -1,0 +1,25 @@
+server:
+  port: ${spring-docker-port}
+  servlet:
+    context-path: /api/v1
+
+spring:
+  flyway:
+    default-schema: ${db-name}
+  datasource:
+    url: ${db-url}
+    username: ${db-username}
+    password: ${db-password}
+    hikari:
+      catalog: ${db-name}
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+        useLocalSessionState: true
+        rewriteBatchedStatements: true
+        cacheResultSetMetadata: true
+        cacheServerConfiguration: true
+        elideSetAutoCommits: true
+        maintainTimeStats: false

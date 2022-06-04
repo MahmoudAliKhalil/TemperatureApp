@@ -1,0 +1,13 @@
+<div class="flex-container p-5 vstack gap-3">
+  <div class="row">
+    <app-sensor-data-input></app-sensor-data-input>
+  </div>
+  <div class="row">
+    <div class="col-8 flex-grow-1">
+      <app-recent-temperature-table (deviceSelected)="getDeviceTemperatures($event)"></app-recent-temperature-table>
+    </div>
+    <div class="col-4" [class.d-none]="!isDeviceTableVisible">
+      <app-device-temperature-table [temperatures]="deviceTemperatures"></app-device-temperature-table>
+    </div>
+  </div>
+</div>
