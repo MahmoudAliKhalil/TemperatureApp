@@ -12,7 +12,7 @@ A web application with web service responsible for receiving data from temperatu
 
 1. Clone the repository.
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/MahmoudAliKhalil/TemperatureApp.git
    ```
 2. Navigate to project directory.
    ```sh
